@@ -15,7 +15,6 @@ This is a solution to the [Results summary component on Frontend Mentor](https:/
 ### Screenshot
 
 ![](https://imgur.com/cDJfwSy.png)
-![](https://imgur.com/ZFcSJvI.png)
 
 ### Links
 

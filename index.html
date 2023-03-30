@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
+    <title>Frontend Mentor | Results summary component | David Delač</title>
+  </head>
+  <body>
+    <main>
+      <div class="flex md:justify-center md:items-center h-full md:h-screen">
+        <div class="md:shadow-2xl w-full md:w-[42rem] md:rounded-3xl bg-white">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col items-center justify-center bg-gradient-to-t from-lightRoyalBlue to-lightSlateBlue rounded-b-3xl md:rounded-3xl p-10 space-y-4">
+              <h1 class="text-lightLavender text-xl font-bold">Your Result</h1>
+              <div class="flex flex-col items-center justify-center w-40 h-40 bg-gradient-to-t to-violetBlue from-persianBlue rounded-full">
+                <p id="total-result" class="text-white text-6xl font-extrabold">76</p>
+                <p class="text-lightLavender/50">of 100</p>
+              </div>
+              <h2 class="text-4xl text-white font-extrabold">Great</h2>
+              <p class="text-lightLavender text-center">You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+            <div class="flex flex-col justify-center px-8 w-full space-y-4 py-8">
+              <h2 class="font-extrabold text-xl">Summary</h2>
+              <div class="flex flex-row justify-between h-full hover:bg-lightRed/20 bg-lightRed/10 p-4 rounded-xl font-extrabold">
+                <div class="flex flex-row space-x-4">
+                  <img src="assets/images/icon-reaction.svg" alt="Reaction" />
+                  <p class="text-lightRed">Reaction</p>
+                </div>
+                <div><span id="reaction-result">80</span><span class="text-darkGrayBlue/50"> / 100</span></div>
+              </div>
+
+              <div class="flex flex-row justify-between h-full hover:bg-orangeyYellow/20 bg-orangeyYellow/10 p-4 rounded-xl font-extrabold">
+                <div class="flex flex-row space-x-4">
+                  <img src="assets/images/icon-memory.svg" alt="Memory" />
+                  <p class="text-orangeyYellow">Reaction</p>
+                </div>
+                <div><span id="memory-result">92</span><span class="text-darkGrayBlue/50"> / 100</span></div>
+              </div>
+
+              <div class="flex flex-row justify-between h-full hover:bg-greenTeal/20 bg-greenTeal/10 p-4 rounded-xl font-extrabold">
+                <div class="flex flex-row space-x-4">
+                  <img src="assets/images/icon-verbal.svg" alt="Verbal" />
+                  <p class="text-greenTeal">Reaction</p>
+                </div>
+                <div><span id="verbal-result">80</span><span class="text-darkGrayBlue/50"> / 100</span></div>
+              </div>
+
+              <div class="flex flex-row justify-between h-full hover:bg-cobaltBlue/20 bg-cobaltBlue/10 p-4 rounded-xl font-extrabold">
+                <div class="flex flex-row space-x-4">
+                  <img src="assets/images/icon-visual.svg" alt="Reaction" />
+                  <p class="text-cobaltBlue">Visual</p>
+                </div>
+                <div><span id="visual-result">80</span><span class="text-darkGrayBlue/50"> / 100</span></div>
+              </div>
+              <div><button class="w-full bg-darkGrayBlue p-3 rounded-full text-white font-bold text-xl">Continue</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="relative md:fixed bottom-0 items-center justify-center flex w-full space-x-2 text-darkGrayBlue">
+        <span>made by <a href="https://github.com/delacdavid" target="_blank" class="hover:underline">David Delač</a></span>
+        <span> | </span>
+        <span class="hover:underline">
+          <a href="#">Source</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
